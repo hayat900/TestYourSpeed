@@ -4,8 +4,9 @@ import FlashCard from '../flashcard/flashcard';
 
 import './typing.css';
 const Typing = ({
-    words, characters, wpm
+    words, characters, wpm,selectedparagraph,timeremaining,timerstarted,testinfo,input
 }) => {
+    // console.log(testinfo);
     return (
         <div className="typing-challenge">
             <div className="details-container">
@@ -14,7 +15,12 @@ const Typing = ({
                 <Details cardname="wpm" cardvalue={wpm} />
             </div>
             <div className="typewriter">
-                <FlashCard selectedParagraph="Hello World" />
+                <FlashCard selectedParagraph={selectedparagraph} 
+                timeremaining={timeremaining}
+                timerstarted={timerstarted}
+                testinfo={testinfo}
+                input={input}
+                />
             </div>
         </div>
     );
