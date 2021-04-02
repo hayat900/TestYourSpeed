@@ -6,11 +6,11 @@ const Landing = () => {
     return (
         <div className="landing-container">
             <div data-aos="fade-right" className="landing-left">
-                <h1 className="landing-header">Can you Type....</h1>
+                <h1 className="landing-header">Can you Type ....</h1>
                 <div className="typewriter-container">
                     <Typewriter
                         options={{
-                            strings: ['Fast', 'Correct', 'Quick'],
+                            strings: ['Fast?', 'Correct?', 'Quick?'],
                             autoStart: true,
                             loop: true,
                         }}
