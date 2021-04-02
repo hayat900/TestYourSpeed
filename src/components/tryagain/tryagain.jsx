@@ -30,15 +30,15 @@ const Tryagain = ({
                 <button onClick={() => {
                     window.open("https://www.facebook.com/sharer/sharer.php?u=example.org",
                         "facebook-share-dialog", "width=800,height=600");
-                }} className="end-button share">
-                    Share
+                }} className="fa fa-facebook">
+                    
     </button>
                 <button onClick={() => {
                     window.open("https://www.twitter.com/intent/tweet?text=dishadsouza",
                         "twitter-share-dialog", "width=800,height=600");
                 }}
-                    className="end-button tweet" >
-                    tweet
+                    className="fa fa-twitter" >
+                    
     </button>
             </div>
         </div>

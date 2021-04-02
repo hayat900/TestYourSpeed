@@ -18,7 +18,7 @@ const Landing = () => {
                 </div>
             </div>
             <div className="landing-right">
-                <img data-aos="fade-left" className="flash-image" src={flash} alt="hero" />
+                <img data-aos="fade-right" className="flash-image" src={flash} alt="hero" />
             </div>
         </div>
     )

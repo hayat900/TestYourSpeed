@@ -9,7 +9,7 @@ const Nav = () => {
                 <p className="flash-logo-text">Flashtype</p>
             </div>
             <div className="nav-right">
-                <a target="_blank" className="nav-aam-link" href="#">Projects</a>
+                <a target="_blank" className="nav-aam-link" href="https://github.com/hayat900">Projects</a>
             </div>
         </div>
     )

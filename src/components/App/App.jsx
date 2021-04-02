@@ -6,7 +6,7 @@ import Footer from '../Footer/Footer';
 
 import Challenge from '../Challenge/Challenge';
 
-const totaltime=2;
+const totaltime=60;
 const url="https://baconipsum.com/api/?type=all-meat&paras=3&start-with-lorem=1&format=text";
 const defaultstate={
     selectedparagraph:"Hello World! disha",
@@ -112,7 +112,20 @@ if(!(index===this.state.selectedparagraph.length-1))
     //update testinfo
     testinfo[index].status=iscorrect? "correct":"incorrect";
     //update state
-    this.setState({testinfo,words,characters});
+    console.log(testinfo[index].status);
+    if(testinfo[index].status==="incorrect")
+    {
+        console.log("incorrect");
+        
+        this.setState({testinfo,words,characters,timeremaining:0});
+        
+        return;
+    }
+    else
+    {
+        this.setState({testinfo,words,characters});
+    }
+    
 
 };
 if(index==this.state.selectedparagraph.length-1)

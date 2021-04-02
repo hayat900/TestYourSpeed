@@ -10,7 +10,8 @@ const FlashCard = ({ selectedParagraph,timeremaining,timerstarted,testinfo,input
                     00:{timeremaining>=10?timeremaining:`0${timeremaining}`}
                </p>
                 <p className="timer-info">
-                    {(!timerstarted)?"Start typing to start the test":undefined}
+                    {(!timerstarted)?
+                    "The test will stop the moment you type an incorrect letter or when the timer zeros down.\nStart typing to start the test":undefined}
 
                </p>
             </div>
@@ -30,7 +31,7 @@ const FlashCard = ({ selectedParagraph,timeremaining,timerstarted,testinfo,input
                     <textarea 
                     onChange={(e)=>input(e.target.value)}
                     className="textarea"
-                        placeholder="start typing"
+                        placeholder="start typing here...."
                     >
 
 

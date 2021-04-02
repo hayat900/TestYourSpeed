@@ -39,7 +39,8 @@
 }
 .start:hover,.start:focus
 {
-    background-color: rgb(90, 185, 12);
+    /* background-color: rgb(90, 185, 12); */
+    opacity:0.8
 }
 
 .share{
@@ -58,5 +59,38 @@
 .tweet{
     background-color:rgb(98, 7, 126);;
 }
+.fa {
+    position:relative;
+    margin:12px;
+    border:none;
+    border-radius:4px;
+    min-width:64px;
+    padding:2px 16px;
+    vertical-align: middle;
+    color:#fff;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,.26);
+    font-size:18px;
+    line-height:36px;
+    cursor:pointer;
+    transition:background-color 0.2s;
 
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity:0.8;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    
+    background-color: rgb(16, 48, 153);
+    color: white;
+  }
+  .fa-twitter {
+    background: #168ae2;
+    color: white;
+  }
 
