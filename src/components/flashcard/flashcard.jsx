@@ -11,7 +11,7 @@ const FlashCard = ({ selectedParagraph,timeremaining,timerstarted,testinfo,input
                </p>
                 <p className="timer-info">
                     {(!timerstarted)?
-                    "The test will stop the moment you type an incorrect letter or when the timer zeros down.\nStart typing to start the test":undefined}
+                    "The test will stop the moment you type an incorrect letter or when the timer zeros down.The sample text changes everything you refresh the screen.Start typing to start the test.":undefined}
 
                </p>
             </div>

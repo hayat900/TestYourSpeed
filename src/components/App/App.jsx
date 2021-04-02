@@ -115,7 +115,7 @@ if(!(index===this.state.selectedparagraph.length-1))
     console.log(testinfo[index].status);
     if(testinfo[index].status==="incorrect")
     {
-        console.log("incorrect");
+        
         
         this.setState({testinfo,words,characters,timeremaining:0});
         
@@ -139,7 +139,7 @@ if(index==this.state.selectedparagraph.length-1)
     };
     render() {
         // console.log(this.state.testinfo);
-        console.log("call");
+        
         // console.log(this.state.testinfo);
         // fetch(url).then((response)=>response.text()).then((data)=>{
         //     console.log(data);
