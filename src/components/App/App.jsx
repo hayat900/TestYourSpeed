@@ -6,18 +6,19 @@ import Footer from '../Footer/Footer';
 
 import Challenge from '../Challenge/Challenge';
 
-const totaltime=60;
+const totaltime=2;
 const url="https://baconipsum.com/api/?type=all-meat&paras=3&start-with-lorem=1&format=text";
+const defaultstate={
+    selectedparagraph:"Hello World! disha",
+    timerstarted:false,
+    timeremaining:totaltime,
+    words:0,
+    characters:0,
+    wpm:0,
+    testinfo:[],
+}
 class App extends React.Component {
-    state={
-        selectedparagraph:"Hello World! disha",
-        timerstarted:false,
-        timeremaining:totaltime,
-        words:0,
-        characters:0,
-        wpm:0,
-        testinfo:[],
-    }
+   state=defaultstate;
     componentDidMount(){
          fetch(url).
          then((response)=>response.text()).
@@ -31,7 +32,7 @@ class App extends React.Component {
              };
          });
          this.setState({testinfo:testinfo});
-                 this.setState({selectedparagraph:data});
+                 this.setState({...defaultstate,testinfo,selectedparagraph:data});
             });
         
         
@@ -53,6 +54,24 @@ class App extends React.Component {
             }
         },1000);
     }
+    startagain=()=>
+        {
+            fetch(url).
+            then((response)=>response.text()).
+            then((data)=>{
+            console.log(data);
+                    const selectedparagrapharray=data.split("");
+                    const testinfo=selectedparagrapharray.map((selectedletter)=>{
+               return{
+                    testletter:selectedletter,
+                    status:"NotAttempted",
+                };
+            });
+            this.setState({testinfo:testinfo});
+                    this.setState({...defaultstate,testinfo,selectedparagraph:data});
+               });
+        }
+    
     handleuserinput=(inputvalue)=>{
         console.log(inputvalue);
         if(!this.state.timerstarted)
@@ -71,7 +90,7 @@ class App extends React.Component {
                         testletter:this.state.testinfo[0].testletter,
                         status:"NotAttempted",
                     },
-                    ...this.state.testinfo.slice(1),
+                    ...this.state.testinfo.slice(1),//rest and spread operator
                 ],
                 characters,words,
 
@@ -128,6 +147,7 @@ if(index==this.state.selectedparagraph.length-1)
                  timerstarted={this.state.timerstarted}
                  testinfo={this.state.testinfo}
                  input={this.handleuserinput}
+                 startagain={this.startagain}
                  /> 
             </div>
         );

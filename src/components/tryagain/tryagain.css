@@ -34,12 +34,12 @@
 
 }
 .start{
-    background-color: rgb(22, 131, 12);
+    background-color: rgb(13, 105, 4);
 
 }
 .start:hover,.start:focus
 {
-    background-color: rgb(15, 207, 73);
+    background-color: rgb(90, 185, 12);
 }
 
 .share{
@@ -53,7 +53,7 @@
 }
 .tweet:hover,.tweet:focus
 {
-    background-color:rgb(151, 59, 236)
+    background-color:rgb(105, 5, 199)
 }
 .tweet{
     background-color:rgb(98, 7, 126);;

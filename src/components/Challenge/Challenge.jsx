@@ -10,7 +10,8 @@ const Challenge = (props) => {
             </h1>
             <Testcontain words={props.words} characters={props.characters} wpm={props.wpm} 
             timeremaining={props.timeremaining} timerstarted={props.timerstarted} selectedparagraph=
-            {props.selectedparagraph} testinfo={props.testinfo} input={props.input}
+            {props.selectedparagraph} testinfo={props.testinfo} input={props.input} 
+            startagain={props.startagain}
             />
         </div >
     );

@@ -1,7 +1,7 @@
 import React from 'react';
 import './tryagain.css';
 const Tryagain = ({
-    words, characters, wpm
+    words, characters, wpm,startagain
 }) => {
     return (
         <div className="try-again-container">
@@ -9,27 +9,29 @@ const Tryagain = ({
             <h1>Test Results</h1>
             <div className="result-container">
                 <p>
-                    <b>characters:</b>{characters}
+                    <b>Characters: </b>{characters}
 
                 </p>
                 <p>
-                    <b>words:</b>{words}
+                    <b>Words: </b>{words}
 
                 </p>
                 <p>
-                    <b>wpm:</b>{wpm}wpm
+                    <b>Wpm: </b>{wpm}
 
                 </p>
             </div>
             <div>
-                <button className="end-button start">
+                <button onClick={()=>startagain()
+                }
+                className="end-button start">
                     retry
     </button>
                 <button onClick={() => {
-                    window.open("https://www.facecom.com/sharer/sharer.php?u=Checkitout",
+                    window.open("https://www.facebook.com/sharer/sharer.php?u=example.org",
                         "facebook-share-dialog", "width=800,height=600");
                 }} className="end-button share">
-                    share
+                    Share
     </button>
                 <button onClick={() => {
                     window.open("https://www.twitter.com/intent/tweet?text=dishadsouza",

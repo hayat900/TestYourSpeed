@@ -3,7 +3,7 @@ import Tryagain from '../tryagain/tryagain';
 import Typing from '../typing/typing';
 import './Testcontainer.css';
 const Testcontain = ({
-    words, characters, wpm,selectedparagraph,timeremaining,timerstarted,testinfo,input
+    words, characters, wpm,selectedparagraph,timeremaining,timerstarted,testinfo,input,startagain
 }) => {
     // console.log(testinfo);
     return (
@@ -17,11 +17,14 @@ const Testcontain = ({
                         timerstarted={timerstarted}
                         testinfo={testinfo}
                         input={input}
+                        
                         />
                     </div>
                 ) : (
                     <div className="try-again">
-                        <Tryagain words={words} characters={characters} wpm={wpm} />
+                        <Tryagain words={words} characters={characters} wpm={wpm}
+                        startagain={startagain}
+                        />
                     </div>
                 )
             }
