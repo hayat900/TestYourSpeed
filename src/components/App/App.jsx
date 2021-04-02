@@ -23,7 +23,7 @@ class App extends React.Component {
          fetch(url).
          then((response)=>response.text()).
          then((data)=>{
-         console.log(data);
+         
                  const selectedparagrapharray=data.split("");
                  const testinfo=selectedparagrapharray.map((selectedletter)=>{
             return{
@@ -59,7 +59,7 @@ class App extends React.Component {
             fetch(url).
             then((response)=>response.text()).
             then((data)=>{
-            console.log(data);
+            
                     const selectedparagrapharray=data.split("");
                     const testinfo=selectedparagrapharray.map((selectedletter)=>{
                return{
@@ -73,7 +73,7 @@ class App extends React.Component {
         }
     
     handleuserinput=(inputvalue)=>{
-        console.log(inputvalue);
+        
         if(!this.state.timerstarted)
         {
             this.startTimer();
@@ -112,7 +112,7 @@ if(!(index===this.state.selectedparagraph.length-1))
     //update testinfo
     testinfo[index].status=iscorrect? "correct":"incorrect";
     //update state
-    console.log(testinfo[index].status);
+    
     if(testinfo[index].status==="incorrect")
     {
         

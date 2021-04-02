@@ -2,7 +2,7 @@ import React from 'react';
 import Testletter from '../testletter/testletter';
 import './flashcard.css';
 const FlashCard = ({ selectedParagraph,timeremaining,timerstarted,testinfo,input }) => {
-    console.log(testinfo);
+    
     return (
         <div className="typing">
             <div className="timer-container">
