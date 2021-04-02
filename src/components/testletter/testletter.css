@@ -1,13 +1,14 @@
 .test-letter{
-    font-size:19px;
+    font-size:26px;
     line-height:19px;
+    letter-spacing: 1cm;
 }
 .test-letter-correct{
-    color:rgb(9, 148, 9);
+    color:rgb(7, 122, 13);
 }
 .test-letter-incorrect{
     color:red;
 }
 .test-letter-not{
-    color:rgba(209, 240, 34, 0.87);
+    color:rgba(209, 116, 9, 0.87);
 }
