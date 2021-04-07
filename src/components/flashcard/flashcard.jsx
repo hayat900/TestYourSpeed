@@ -31,7 +31,7 @@ const FlashCard = ({ selectedParagraph,timeremaining,timerstarted,testinfo,input
                     <textarea 
                     onChange={(e)=>input(e.target.value)}
                     className="textarea"
-                        placeholder="start typing here...."
+                        placeholder="Start typing here...."
                     >
 
 

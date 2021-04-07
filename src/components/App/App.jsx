@@ -116,7 +116,12 @@ if(!(index===this.state.selectedparagraph.length-1))
     if(testinfo[index].status==="incorrect")
     {
         
+  
+
         
+            alert("You typed "+inputvalue[index]+" instead of "+testinfo[index].testletter+"");
+            
+           
         this.setState({testinfo,words,characters,timeremaining:0});
         
         return;

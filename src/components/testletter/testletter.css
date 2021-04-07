@@ -3,12 +3,12 @@
     line-height:19px;
     letter-spacing: 1cm;
 }
-.test-letter-correct{
-    color:rgb(7, 122, 13);
+.test-letter-correct{ 
+    color:rgba(30, 17, 219, 0.781);
 }
 .test-letter-incorrect{
     color:red;
 }
 .test-letter-not{
-    color:rgba(209, 116, 9, 0.87);
+    color:darkmagenta;
 }
