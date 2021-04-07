@@ -1,8 +1,9 @@
 import React from 'react';
 import './tryagain.css';
 const Tryagain = ({
-    words, characters, wpm,startagain
+    words, characters, wpm,startagain,input,timeremaining
 }) => {
+    
     return (
         <div className="try-again-container">
 

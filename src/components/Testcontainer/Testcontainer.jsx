@@ -23,7 +23,7 @@ const Testcontain = ({
                 ) : (
                     <div className="try-again">
                         <Tryagain words={words} characters={characters} wpm={wpm}
-                        startagain={startagain}
+                        startagain={startagain} timeremaining={timeremaining} input={input}
                         />
                     </div>
                 )

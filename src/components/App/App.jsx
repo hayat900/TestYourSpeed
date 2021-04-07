@@ -118,11 +118,16 @@ if(!(index===this.state.selectedparagraph.length-1))
         
   
 
-        
+        if(testinfo[index].testletter!=" "){
+            
             alert("You typed "+inputvalue[index]+" instead of "+testinfo[index].testletter+"");
+        }
+            else
+            alert("You typed "+inputvalue[index]+" instead of "+"a whitespace character"+"");
+
             
            
-        this.setState({testinfo,words,characters,timeremaining:0});
+        this.setState({testinfo,words,characters,timeremaining:-1});
         
         return;
     }
