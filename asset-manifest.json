@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/TestYourSpeed/static/css/main.889e8f04.chunk.css",
-    "main.js": "/TestYourSpeed/static/js/main.ff4302eb.chunk.js",
-    "main.js.map": "/TestYourSpeed/static/js/main.ff4302eb.chunk.js.map",
+    "main.css": "/TestYourSpeed/static/css/main.492d0714.chunk.css",
+    "main.js": "/TestYourSpeed/static/js/main.64f5b4a2.chunk.js",
+    "main.js.map": "/TestYourSpeed/static/js/main.64f5b4a2.chunk.js.map",
     "runtime-main.js": "/TestYourSpeed/static/js/runtime-main.d1ca8092.js",
     "runtime-main.js.map": "/TestYourSpeed/static/js/runtime-main.d1ca8092.js.map",
     "static/js/2.81d96a0e.chunk.js": "/TestYourSpeed/static/js/2.81d96a0e.chunk.js",
     "static/js/2.81d96a0e.chunk.js.map": "/TestYourSpeed/static/js/2.81d96a0e.chunk.js.map",
     "index.html": "/TestYourSpeed/index.html",
-    "static/css/main.889e8f04.chunk.css.map": "/TestYourSpeed/static/css/main.889e8f04.chunk.css.map",
+    "static/css/main.492d0714.chunk.css.map": "/TestYourSpeed/static/css/main.492d0714.chunk.css.map",
     "static/js/2.81d96a0e.chunk.js.LICENSE.txt": "/TestYourSpeed/static/js/2.81d96a0e.chunk.js.LICENSE.txt",
     "static/media/flash.96e141d3.png": "/TestYourSpeed/static/media/flash.96e141d3.png",
     "static/media/logo.904ac8fd.png": "/TestYourSpeed/static/media/logo.904ac8fd.png"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.d1ca8092.js",
     "static/js/2.81d96a0e.chunk.js",
-    "static/css/main.889e8f04.chunk.css",
-    "static/js/main.ff4302eb.chunk.js"
+    "static/css/main.492d0714.chunk.css",
+    "static/js/main.64f5b4a2.chunk.js"
   ]
 }
