@@ -4,7 +4,7 @@ The timer will start the moment you type the first letter and will go off the mo
 
 #You  can check the working of this project by typing https://hayat900.github.io/TestYourSpeed/
 
-## How to run the projecr
+## How to run the project
 
 In the project directory, you can run:
 
